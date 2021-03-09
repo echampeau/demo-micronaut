@@ -8,7 +8,7 @@ import javax.inject.Inject;
 import static org.junit.jupiter.api.Assertions.*;
 
 @MicronautTest
-public class HelloControllerTest {
+public class LolControllerTest {
 
     @Inject
     @Client("/")
@@ -16,6 +16,6 @@ public class HelloControllerTest {
 
     @Test
     public void testIndex() throws Exception {
-        assertEquals(HttpStatus.OK, client.toBlocking().exchange("/hello").status());
+        assertEquals(HttpStatus.OK, client.toBlocking().exchange("/lol").status());
     }
 }
